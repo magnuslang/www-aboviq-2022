@@ -1,10 +1,12 @@
-import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { initPlasmicLoader } from '@plasmicapp/loader-nextjs';
+import { Headscroll } from 'react-headscroll';
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "6LerTeBVd41E4fdeYa2T7f",
-      token: "4F990IBZAkpv7E4xh1Rhk1F3xQ6zpO0WDd1afdIl2xf9tjKEiQUsQROW1HJjlNVWLM4XzQizzTNuUH5dw",
+      id: '6LerTeBVd41E4fdeYa2T7f',
+      token:
+        '4F990IBZAkpv7E4xh1Rhk1F3xQ6zpO0WDd1afdIl2xf9tjKEiQUsQROW1HJjlNVWLM4XzQizzTNuUH5dw',
     },
   ],
 
@@ -22,4 +24,13 @@ export const PLASMIC = initPlasmicLoader({
 // http://localhost:3000/plasmic-host).  See
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
-// PLASMIC.registerComponent(...);
+PLASMIC.registerComponent(Headscroll, {
+  name: 'Headscroll',
+  props: {
+    fixed: 'boolean',
+    direction: 'string',
+  },
+  defaultStyles: {
+    width: '100%',
+  },
+});
