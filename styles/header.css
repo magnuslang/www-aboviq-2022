@@ -1,0 +1,21 @@
+div {
+  scroll-margin-top: 62px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  div {
+    scroll-margin-top: 131px;
+  }
+}
+
+#form-success {
+  display: none;
+}
+
+#form-submitted:target #form-success {
+  display: flex;
+}
+
+#form-submitted:target #contact-form {
+  display: none;
+}
