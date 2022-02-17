@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="next-head-count" content="3" />
+  </head>
+  <body>
+    <!-- Static file with forms. This is to set up the forms in Netlify (next js will render on req, not at build time) -->
+    <form
+      accept-charset="utf-8"
+      action="/#form-submitted"
+      data-netlify="true"
+      method="POST"
+      name="contact-form"
+      role="form"
+    >
+      <div class="__wab_flex-container">
+        <div
+          class="plasmic_default__all plasmic_default__div __wab_text ContactForm__text__stNoD"
+        >
+          Start en dialog med oss - formuläret mailas till oss och vi återkommer
+          till den adress du anger.
+        </div>
+        <div
+          class="plasmic_default__all plasmic_default__div ContactForm__freeBox__ey8Cn"
+        >
+          <div
+            class="plasmic_default__all plasmic_default__div ContactForm__freeBox__wd3Gi"
+          >
+            <div class="__wab_flex-container">
+              <input
+                class="plasmic_default__all plasmic_default__input ContactForm__textInput__xjOz"
+                id="name"
+                name="name"
+                placeholder="Förnamn"
+                size="1"
+                type="text"
+                value=""
+              /><input
+                class="plasmic_default__all plasmic_default__input ContactForm__textInput__cc22K"
+                id="surname"
+                name="surname"
+                placeholder="Efternamn"
+                size="1"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <input
+            class="plasmic_default__all plasmic_default__input ContactForm__textInput__pAmtw"
+            id="email"
+            name="email"
+            placeholder="Email"
+            size="1"
+            type="text"
+            value=""
+          /><textarea
+            class="plasmic_default__all plasmic_default__textarea ContactForm__textarea__s77O2"
+            id="message"
+            name="message"
+            placeholder="Meddelande"
+          ></textarea
+          ><button
+            class="plasmic_default__all plasmic_default__button ContactForm__button__h7RZz"
+            type="submit"
+          >
+            <div class="__wab_flex-container">
+              <div
+                class="plasmic_default__all plasmic_default__div __wab_text ContactForm__text___2OlQb"
+              >
+                Skicka
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
