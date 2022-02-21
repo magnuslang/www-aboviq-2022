@@ -26,6 +26,7 @@ export const HeaderWrapper = ({
   return (
     <div
       style={{
+        marginLeft: '8px',
         top: scrollY < offset ? '0px' : '-250px',
         transition: 'top 0.5s',
         position: 'fixed',
